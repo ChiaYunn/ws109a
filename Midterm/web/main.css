@@ -1,0 +1,35 @@
+body {
+    background-color: #000;
+}
+
+h1,h2,p,li {
+    color: #fff;
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    border-top: 1px dashed #ffffff;
+    height: 1px;
+    overflow: hidden
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.line {
+    float: right;
+}
+
+image {
+    margin: auto;
+}
+
+.add {
+    text-align: center;
+    color: #ffffff;
+}
