@@ -1,5 +1,8 @@
 # 期末完整網站專案(Chatroom)
 
+## 網址：
+https://chatroom1123.herokuapp.com/
+
 ## 登入：
 
 ![image](./pic/1.jpg)
