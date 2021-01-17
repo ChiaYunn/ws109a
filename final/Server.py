@@ -55,17 +55,16 @@ def homeoo():
 @app.route('/room', methods=['GET', 'POST'])
 def homeroo():
     global msg
-    wsl = request.environ.get("wsgi.websocket")
-    if wsl:
-        print(wsl)
     if request.method == 'POST':
         i = request.form['inputm']
+        u = request.form['username']
         ctime = str(getTime())
-        row = {'msg': i, 'time': ctime}
+        row = {'username': u, 'msg': i, 'time': ctime}
+        print(row)
         msg.append(row)
         _msg = msg.copy()
         _msg.reverse()
-        return render_template('chatroom.html', msg=_msg)
+        return render_template('chatroom.html', msg=_msg, userName=u)
     else:
         return render_template('chatroom.html', msg=msg)
 
